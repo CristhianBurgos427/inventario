@@ -9,6 +9,9 @@ app.use(express.json());
 
 // Setear un puerto a mi servidor web
 app.set("port", 5000);
+//Middleware
+app.use(express.json());
+
 app.use(cors());
 
 // Rutas
