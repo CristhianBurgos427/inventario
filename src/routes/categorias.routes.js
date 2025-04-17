@@ -12,5 +12,8 @@ router.get("/:id", categoriaController.getCategory);//para crud - read como upda
 //ruta que recibe parametro id de categoria a borrar
 router.delete("/:id", categoriaController.deletegetCategory);//para crud - delete 1 sola fila
 
+//Ruta que recibe como parametro tanto el cuerpo como ID a actualizar
+router.put("/:id", categoriaController.updateCategorias);//para crud - delete 1 sola fila
+
 
 export default router;
