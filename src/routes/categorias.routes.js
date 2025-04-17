@@ -7,6 +7,8 @@ const router = Router();
 // Definir la ruta para obtener categorías
 router.get("/", categoriaController.getCategorias);//read
 router.post("/", categoriaController.postCategorias);//create
-//update, delete
+//Ruta que recibe un parametro
+router.get("/:id", categoriaController.getCategory);//create
+
 
 export default router;
