@@ -11,6 +11,9 @@ app.set("port",5000)
 app.use(express.json());
 app.use(cors());
 app.use("/api/categorias",categoriaRouter);
+app.get('/',(req,res)=>{
+    res.send('REST API EN RENDER WITHHOUT DATABASE ENDPOINTS')
+})
 app.use("/api/empleados",empleadoRouter);
 app.use("/api/clientes",clienteRouter);
 app.use("/api/productos",productoRouter);
